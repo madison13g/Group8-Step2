@@ -45,7 +45,7 @@ class Topic:
         ----------
         The string showing topic id and name.
         """
-        print(f'Topic id: {self.tid} Topic name: {self.tname}')
+        return f'Topic id: {self.tid} Topic name: {self.tname}'
     
     def search(tag):
         """
@@ -59,9 +59,9 @@ class Topic:
         for i in Topic.topics:
             if i.tag == tag:
                 exist = 1
-                i.show()
+                return i.show()
         if exist == 0:
-            print('[No topic under this tag.]')
+            return('[No topic under this tag.]')
 
             
 ## Topic objects stored            

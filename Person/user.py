@@ -33,6 +33,7 @@ class User():
             User.userCount += 1
             self.users.append(self)
             self.usernames.append(user)
+        self.user = user
         
     def displayUser(self):
         """
@@ -42,7 +43,7 @@ class User():
         ----------
         The string showing username.
         """
-        print('Username: {}'.format(self.user))
+        print('Username:', self.user)
         
         # change password
     @property
